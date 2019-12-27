@@ -1,0 +1,177 @@
+
+
+
+/*========================*/
+/* BASIC SETUP */
+/*========================*/
+
+/*
+font family file link 
+light=300*
+regular=400
+semi-bold=600
+bold=700
+*/
+@font-face{
+	src: url('../vendors/fonts/TitilliumWeb-Regular.ttf');
+	font-family: Titillium Web;
+}
+/*all html tag select*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+/*html tag*/
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+/*body tag*/
+body{
+	font-family: Titillium Web;
+	text-rendering: optimizeLegibility;
+	line-height: 1.3;
+}
+/*list tag*/
+ul li{
+	list-style-type: none;
+}
+/*anchor tag*/
+a{
+	text-decoration: none;
+}
+/*img tag*/
+img{
+	vertical-align: middle;
+}
+
+
+
+/*=======================*/
+/* REUSABLE COMPONENTS */
+/*=======================*/
+/*Button*/
+.btn:link,
+.btn:visited,
+.btn{
+	color: #fff;
+	background: #eb7d4b;
+	text-transform: uppercase;
+	display: table;
+	margin: auto;
+	padding: 1.5rem 6rem;
+	text-align: center;
+	border-bottom: .3rem solid #c86a40;
+	border-radius: .3rem;
+	margin-top: 4.5rem;
+}
+/*Title*/
+.title{
+	text-align: center;
+}
+.title h2{
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 4.2rem;
+	font-weight: 600;
+	letter-spacing: .4rem;
+}
+.title h2::after{
+	content: "";
+	display: block;
+	height: .4rem;
+	width: 8.5rem;
+	background: #14a58c;
+	margin: auto;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+.title p{
+	color: #fff;
+	font-size: 1.8rem;
+	padding: 0 22.2rem;
+	margin-bottom: 5rem;
+}
+/*Section tag*/
+section{
+	padding: 8rem 0;
+}
+
+
+
+
+
+
+
+
+/*=======================*/
+/*contact Section Design*/
+/*=======================*/
+.contact-section{
+	width: 100%;
+	background: linear-gradient(rgb(60,84,153, 0.9), rgb(60,84,153, 0.8)), url("../images/contact-bg.jpg");
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: top center;
+	background-attachment: fixed;
+}
+.contact-contain{
+	max-width: 103.5rem;
+    margin: auto;
+    display: block;
+}
+.contact-title h2{
+	color: #ffffff;
+}
+.contact-title h2::after{
+	background: #273a71;
+}
+.contact-title p{
+	color: #ffffff;
+	padding: 0rem 22rem;
+	line-height: 1.7;
+}
+.contact-container{
+	padding: 0rem 18rem;
+	margin-top: 5rem;
+}
+.contact-item1{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1.5rem;
+}
+.contact-item2{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 1.5rem;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+}
+.contact-item3{
+	text-align: center;
+}
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container textarea{
+	background: #273a71;
+	border: .1rem solid #273a71;
+	border-radius: .5rem;
+	padding: 1.5rem;
+	font-size: 1.8rem;
+	color: #ffffff;
+}
+.contact-container input::placeholder,
+.contact-container textarea::placeholder{
+	color: #ffffff;
+	opacity: 1;
+}
+.submit-btn{
+	background: #30bae7;
+	border: 0rem;
+	border-bottom: .3rem solid #299ec5;
+	font-size: 1.4rem;
+	cursor: pointer;
+}
